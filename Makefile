@@ -1,5 +1,5 @@
 
-EXECUTABLES_REQUIRED = make qtconfig clang-format-6.0 zip cmake 
+EXECUTABLES_REQUIRED = make qtconfig clang-format clang-format-6.0 zip cmake 
 EXECUTABLES_OPTIONAL = arm-none-eabi-gcc openocd
 
 require:
