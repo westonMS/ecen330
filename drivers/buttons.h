@@ -13,7 +13,6 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 #define BUTTONS
 
 #include <stdint.h>
-
 #define BUTTONS_BTN0_MASK 0x1
 #define BUTTONS_BTN1_MASK 0x2
 #define BUTTONS_BTN2_MASK 0x4
