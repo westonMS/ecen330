@@ -9,8 +9,8 @@ source code for personal or educational use.
 For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 */
 
-#ifndef ARMINTERRUPTS
-#define ARMINTERRUPTS
+#ifndef ARMINTERRUPTS_H
+#define ARMINTERRUPTS_H
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -54,7 +54,7 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 //#define SELECTED_XADC_CHANNEL XADC_AUX_CHANNEL_15
 
 // Uses interval timer 0 to measure time spent in ISR.
-#define ENABLE_INTERVAL_TIMER_0_IN_TIMER_ISR 1
+#define ENABLE_INTERVAL_TIMER_0_IN_TIMER_ISR 0
 // Interval timer to use to capture total ISR runtime
 #define INTERRUPT_CUMULATIVE_ISR_INTERVAL_TIMER_NUMBER 0
 
@@ -112,4 +112,4 @@ void armInterrupts_ackBluetoothInterrupts();
 } // extern "C'
 #endif
 
-#endif /* ARMINTERRUPTS */
+#endif /* ARMINTERRUPTS_H */

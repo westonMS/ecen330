@@ -10,13 +10,12 @@ second, resulting in LED that turns on for 1 second, off for 1 second,
 repeatedly.
 
 For each interval timer:
-    1. Initialize it as a count down timer with appropriate period (1s, 0.5s,
-0.25s)
-    2. Enable the timer's interrupt output
+    1. Initialize it as a count down timer with appropriate period.
+    2. Enable the timer's interrupt output.
     3. Enable the associated interrupt input on the interrupt controller.
     4. Register an appropriate interrupt handler function (isr_timer0,
-isr_timer1, isr_timer2)
-    5. Start the timer
+isr_timer1, isr_timer2).
+    5. Start the timer.
 
 Make sure you call `interrupts_init()` first!
 */
