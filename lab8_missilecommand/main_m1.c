@@ -36,7 +36,7 @@ void isr() {
 // Milestone 1 test application
 int main() {
   display_init();
-  display_fillScreen(DISPLAY_BLACK);
+  display_fillScreen(CONFIG_BACKGROUND_COLOR);
 
   // Initialize timer interrupts
   interrupts_init();
