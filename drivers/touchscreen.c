@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 // Defines
-#define DEBUG true
+#define DEBUG false
 #define WAITING_STATE "WAITING \n"
 #define ADC_SETTLING_STATE "ADC_SETTLING \n"
 #define PRESS_ST_ST "PRESS_ST\n"
@@ -27,7 +27,7 @@ typedef enum {
 typedef enum {
   WAITING,      // Touchscreen is idle (not pressed)
   ADC_SETTLING, // Touchscreen is actively being pressed
-  PRESSED      // Touchscreen has been released, but not acknowledged
+  PRESSED       // Touchscreen has been released, but not acknowledged
 } touchscreen_state_t;
 touchscreen_status_t ts_status;
 touchscreen_state_t ts_state;
